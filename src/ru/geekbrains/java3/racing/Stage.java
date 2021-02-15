@@ -6,5 +6,9 @@ public abstract class Stage {
   public String getDescription() {
     return description;
   }
+  public void givMeTicket() {
+    MainClass.cdlFinish.countDown();
+  }
   public abstract void go(Car c);
 }
+
